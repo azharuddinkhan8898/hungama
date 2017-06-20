@@ -1,0 +1,675 @@
+@font-face {
+  font-family: 'Nobel-bold';
+  src: url('../fonts/Nobel-Bold.eot');
+  src: url('../fonts/Nobel-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Nobel-Bold.woff') format('woff'), url('../fonts/Nobel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+.keySectorTextMob {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Nobel-regular';
+  src: url('../fonts/Nobel-Regular.eot');
+  src: url('../fonts/Nobel-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Nobel-Regular.woff') format('woff'), url('../fonts/Nobel-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#myCarousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-inner .item {
+  background: url(../imgs/sliderBack.jpg) no-repeat;
+  background-size: cover;
+  height: 450px;
+  background-position: center center;
+  padding-top: 90px;
+}
+
+.carousel-inner .item p {
+  margin: 0;
+  color: #ffffff;
+  font-family: Nobel-bold;
+  text-align: center;
+  line-height: 100%;
+}
+
+.carousel-inner .item img {
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.carousel-inner .item p:first-child {
+  font-size: 40px;
+}
+
+.cutvid {
+  position: absolute;
+  right: -118px;
+  top: 0;
+  height: 100%;
+  width: 224px;
+  background: #ffffff;
+  transform: skewX(-25deg);
+}
+
+.sliderNav {
+  position: absolute;
+  bottom: 120px;
+  right: 80px;
+}
+
+.sliderNav img {
+  height: 20px;
+}
+
+.floating {
+  position: fixed;
+  top: 15%;
+  right: 0px;
+  width: 60px;
+  z-index: 9999;
+}
+
+.floating img {
+  max-width: 70%;
+}
+
+.floating .register,
+.floating .follow {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  font-family: 'Nobel-bold';
+  font-size: 11px;
+  line-height: 110%;
+  cursor: pointer;
+}
+
+.floating .register {
+  background: #ee6a00;
+  color: #ffffff;
+}
+
+.floating .register p {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.floating .follow {
+  margin-top: 10px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.21);
+}
+
+.floating .follow p {
+  opacity: 0.6;
+}
+
+.ourBsns {
+  height: 200px;
+  width: 80%;
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+  right: -13%;
+}
+
+.ourBsns .content {
+  height: 100%;
+  width: 100%;
+  background: #f8b233;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+}
+
+.ourBsns .content .options {
+  width: 200px;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  right: 0px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+}
+
+.ourBsns .content .options a {
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  font-family: 'Nobel-bold';
+  font-size: 13px;
+  text-align: center;
+  color: #4e4e4e;
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+.options img {
+  margin: 9px 20px 5px 20px;
+  width: 55px;
+}
+
+.person {
+  position: absolute;
+  z-index: 2;
+  border: 3px solid #ffffff;
+  padding: 8px;
+  border-radius: 50%;
+  top: 24px;
+  left: -19px;
+}
+
+.person .personImg {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.person .personImg img {
+  width: 130px;
+}
+
+.person::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 11px solid transparent;
+  border-top: 20px solid #fff;
+  transform: rotate(75deg);
+  top: 122px;
+  left: 113px;
+}
+
+.person::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 14px solid #f8b233;
+  transform: rotate(75deg);
+  top: 123px;
+  left: 115px;
+}
+
+.content .thought {
+  position: absolute;
+  font-family: Nobel-bold;
+  color: #ffffff;
+  width: 220px;
+  margin-left: 160px;
+  margin-top: 40px;
+}
+
+.content .thought span {
+  display: block;
+}
+
+.content .thought .head {
+  font-size: 30px;
+  line-height: 100%;
+}
+
+.content .thought .position {
+  font-family: Nobel-regular;
+  font-size: 13px;
+  margin-top: -3px;
+}
+
+.thought::before {
+  content: '\0201C';
+  font-family: 'Century Schoolbook';
+  font-size: 90px;
+  line-height: 0%;
+  position: absolute;
+  color: #f17c0a;
+}
+
+.content .thought .head i {
+  font-family: 'Century Schoolbook';
+  font-size: 90px;
+  position: absolute;
+  top: 81px;
+  color: #f17c0a;
+}
+
+.cmMsg {
+  position: absolute;
+  right: 215px;
+  top: 170px;
+}
+
+.cmMsg img {
+  height: 20px;
+  margin-top: -13px;
+}
+
+.cmMsg p {
+  display: inline-block;
+  font-family: Nobel-bold;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 100%;
+  margin-bottom: 0px;
+}
+
+.keySector {
+  height: 200px;
+  width: 80%;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 45px;
+}
+
+.content1 {
+  height: 100%;
+  background: #f4f4f4;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+  position: absolute;
+}
+
+.content1 .crousal {
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  top: 30px;
+}
+
+.owl-item .item {
+  border: 2px solid #ee6a00;
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  padding: 37px;
+  font-family: Nobel-bold;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.owl-item .item img {
+  width: 55px;
+}
+
+.item.car {
+  padding: 49px 33px;
+}
+
+.sliderleftdis {
+  background: url(../imgs/sliderPrvs.png) no-repeat;
+}
+
+.sliderleft {
+  background: url(../imgs/sliderNext.png) no-repeat;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.flip {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.sliderright {
+  background: url(../imgs/sliderNext.png) no-repeat;
+}
+
+.sliderNav a span {
+  height: 20px;
+  width: 25px;
+}
+
+.sliderrightdis {
+  background: url(../imgs/sliderPrvs.png) no-repeat;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.owl-next {
+  display: inline-block;
+  position: absolute;
+  right: -25px;
+  top: 50px;
+  height: 20px;
+  width: 25px;
+}
+
+.owl-prev {
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  top: 50px;
+  height: 20px;
+  width: 25px;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  height: 169px;
+}
+
+.owl-item .item p {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  line-height: 100%;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.keySectorText {
+  position: absolute;
+  z-index: 1;
+  right: -127px;
+  top: 60px;
+  text-align: center;
+}
+
+.keySectorText p {
+  font-family: Nobel-bold;
+  line-height: 160%;
+}
+
+.keySectorText .blue {
+  color: #ee6a00;
+  font-size: 30px;
+}
+
+.keySectorText .black {
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 800px) and (min-width: 650px) {
+  .hideTab {
+    display: none;
+  }
+  .ourBsns .content {
+    height: 100%;
+    width: 100%;
+    background: #f8b233;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+  }
+  .ourBsns {
+    height: 200px;
+    width: 100%;
+    margin-top: 35px;
+    z-index: 1;
+    position: relative;
+    left: 0%;
+  }
+  .content .thought {
+    position: absolute;
+    font-family: Nobel-bold;
+    color: #ffffff;
+    width: 220px;
+    margin-left: 180px;
+    margin-top: 40px;
+  }
+  .person {
+    position: absolute;
+    z-index: 2;
+    border: 3px solid #ffffff;
+    padding: 8px;
+    border-radius: 50%;
+    top: 24px;
+    left: 10px;
+  }
+  .keySector {
+    height: 200px;
+    width: 80%;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 35px;
+  }
+  .sliderNav {
+    position: absolute;
+    right: 20px;
+    bottom: 7px;
+  }
+  .keySectorTextMob {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .hideTab {
+    display: none;
+  }
+  .ourBsns .content .options {
+    width: 100%;
+    height: 100px;
+    background: #ffffff;
+    position: absolute;
+    right: 0px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.21);
+    bottom: 0;
+  }
+  .ourBsns .content .options a {
+    float: left;
+    width: 25%;
+    height: 100px;
+    border: 1px solid #eee;
+    font-family: 'Nobel-bold';
+    font-size: 13px;
+    text-align: center;
+    color: #4e4e4e;
+    cursor: pointer;
+  }
+  .ourBsns .content {
+    height: 100%;
+    width: 100%;
+    background: #f8b233;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+  }
+  .ourBsns {
+    height: 290px;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 1;
+    position: relative;
+    left: 0%;
+  }
+  .content .thought {
+    position: absolute;
+    font-family: Nobel-bold;
+    color: #ffffff;
+    width: 170px;
+    margin-left: 140px;
+    margin-top: 40px;
+  }
+  .content .thought .head {
+    font-size: 22px;
+    line-height: 100%;
+  }
+  .content .thought .head i {
+    font-family: 'Century Schoolbook';
+    font-size: 80px;
+    position: absolute;
+    top: 60px;
+    color: #f17c0a;
+  }
+  .person {
+    position: absolute;
+    z-index: 2;
+    border: 3px solid #ffffff;
+    padding: 8px;
+    border-radius: 50%;
+    top: 24px;
+    left: 10px;
+  }
+  .keySector {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 0px;
+  }
+  .sliderNav {
+    position: absolute;
+    right: 0px;
+    bottom: 7px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .owl-next {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 50px;
+    height: 20px;
+    width: 25px;
+  }
+  .owl-prev {
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    height: 20px;
+    width: 25px;
+  }
+  .sliderNav img {
+    height: 30px;
+  }
+  .cmMsg {
+    position: absolute;
+    right: 10px;
+    top: 160px;
+  }
+  .content1 {
+    height: 100%;
+    background: #f4f4f4;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+  }
+  .content1 .crousal {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 30px;
+  }
+  .keySectorText {
+    position: absolute;
+    z-index: 1;
+    right: -127px;
+    top: 60px;
+    text-align: center;
+    display: none;
+  }
+  
+  .person .personImg img {
+    width: 100px;
+  }
+  .person::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 20px solid #fff;
+    transform: rotate(75deg);
+    top: 94px;
+    left: 92px;
+  }
+  .person::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 14px solid #f8b233;
+    transform: rotate(75deg);
+    top: 94px;
+    left: 93px;
+  }
+  .thought::before {
+    content: '\0201C';
+    font-family: 'Century Schoolbook';
+    font-size: 80px;
+    line-height: 0%;
+    position: absolute;
+    color: #f17c0a;
+  }
+  .owl-item .item {
+    border: 2px solid #ee6a00;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 30px;
+    font-family: Nobel-bold;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  .item.car {
+    padding: 40px 25px;
+  }
+  .owl-item .item p {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    line-height: 100%;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+  .keySectorTextMob {
+    display: block;
+  }
+  .keySectorTextMob p {
+    margin-bottom: 0px;
+    margin-top: 35px;
+    font-family: Nobel-bold;
+    border-top: 1px solid #ee6a00;
+    border-bottom: 1px solid #ee6a00;
+    padding-left: 5px;
+  }
+  .keySectorTextMob .blue {
+    color: #ee6a00;
+    font-size: 25px;
+  }
+}
