@@ -26,7 +26,6 @@ img {
     position: relative;
     overflow: hidden;
 }
-
 .carousel-inner .item {
     background: url(../imgs/sliderBack.jpg) no-repeat;
     background-size: cover;
